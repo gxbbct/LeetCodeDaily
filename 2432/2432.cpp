@@ -2,6 +2,8 @@
 #include<vector>
 using namespace std;
 
+// https://leetcode.cn/problems/the-employee-that-worked-on-the-longest-task
+// 遍历即可
 /*class Solution {
 public:
     int hardestWorker(int n, vector<vector<int>>& logs) {
