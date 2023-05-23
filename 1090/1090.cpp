@@ -13,7 +13,9 @@ public:
         unordered_map<int, int> cnt;
         vector<int> idx(n);
         for (int i = 0; i < n; ++i) idx[i] = i; // 可以用iota(idx.begin(), idx.end(), 0)代替， #include <numeric>
-        sort(idx.begin(), idx.end(), [&](int a, int b){return values[a] > values[b];});
+        sort(idx.begin(), idx.end(), [&](int a, int b){
+            return values[a] > values[b];
+            });
         for (int i = 0; i < n; ++i) {
             if (cnt[labels[idx[i]]] < useLimit) {
                 res += values[idx[i]];
